@@ -61,7 +61,7 @@ class SmartCutBackend(IJobExecutor, IJobStatusProvider):
         print(f"[SmartCut] Machine status: {machine_status}")
 
         self._repo.save_job(job)
-        print(f"[SmartCut] Saved job to database")
+        print("[SmartCut] Saved job to database")
 
         stats = self._repo.get_job_stats(job.id)
         report = self._report_gen.generate(job, stats)
@@ -85,7 +85,6 @@ class SmartCutBackend(IJobExecutor, IJobStatusProvider):
 
         return "not_found"
 
-    # === Вспомогательные методы ===
     def on_job_complete(self, callback: Callable):
         self._event_handlers.append(callback)
 

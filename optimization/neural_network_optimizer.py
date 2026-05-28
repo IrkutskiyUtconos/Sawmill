@@ -19,14 +19,11 @@ class NeuralNetworkOptimizer(ICuttingOptimizer):
 
         cache_key = f"{job.material_dimensions}_{json.dumps(job.required_parts)}"
         if cache_key in self._cache:
-            print(f"[NeuralNetworkOptimizer] Returning cached result")
+            print("[NeuralNetworkOptimizer] Returning cached result")
             return self._cache[cache_key]
 
         if self._model is None:
             self._load_model()
-
-        length, width = job.material_dimensions
-        total_needed = sum(part["length"] * part["qty"] for part in job.required_parts)
 
         cutting_plan = []
         current_pos = 0.0

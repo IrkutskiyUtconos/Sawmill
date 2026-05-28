@@ -26,7 +26,6 @@ class ApiController:
             raise ValueError("Invalid job data")
 
         self._active_jobs[job_id] = job
-        report = self._job_executor.execute(job)
 
         return job_id
 

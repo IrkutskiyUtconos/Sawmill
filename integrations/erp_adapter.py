@@ -27,8 +27,7 @@ class ErpAdapter(IErpIntegration):
         ]
 
     def update_order_status(self, order_id: str, status: str) -> bool:
-        url = f"{self._api_url}/orders/{order_id}/status"
-        payload = {"status": status}
+
 
         print(f"[ErpAdapter] Updating order {order_id} to {status}")
 
