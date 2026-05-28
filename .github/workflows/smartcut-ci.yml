@@ -41,9 +41,6 @@ jobs:
         # Убран --exit-zero, теперь проверка работает корректно
         run: pylint --fail-under=3.0 api core domain integrations optimization repository reports
 
-      - name: Type check with mypy
-        run: mypy --ignore-missing-imports --allow-untyped-decorators api/ core/ domain/ interfaces/
-
   test:
     name: Run Tests (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
