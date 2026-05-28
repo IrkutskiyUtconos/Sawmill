@@ -28,7 +28,6 @@ class ErpAdapter(IErpIntegration):
 
     def update_order_status(self, order_id: str, status: str) -> bool:
 
-
         print(f"[ErpAdapter] Updating order {order_id} to {status}")
 
         return True
