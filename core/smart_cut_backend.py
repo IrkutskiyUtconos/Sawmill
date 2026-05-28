@@ -16,13 +16,13 @@ from domain.report import Report
 
 class SmartCutBackend(IJobExecutor, IJobStatusProvider):
     def __init__(
-            self,
-            optimizer: ICuttingOptimizer,
-            sawmill: IMachineIntegration,
-            erp: IErpIntegration,
-            scanner: IScannerIntegration,
-            repo: ICuttingRepository,
-            report_gen: IReportGenerator
+        self,
+        optimizer: ICuttingOptimizer,
+        sawmill: IMachineIntegration,
+        erp: IErpIntegration,
+        scanner: IScannerIntegration,
+        repo: ICuttingRepository,
+        report_gen: IReportGenerator,
     ):
         self._optimizer = optimizer
         self._sawmill = sawmill

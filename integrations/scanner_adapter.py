@@ -27,5 +27,5 @@ class ScannerAdapter(IScannerIntegration):
             "width": 1.5,
             "thickness": 0.05,
             "defects": [[0.5, 0.2], [1.3, 0.7]],
-            "quality_score": 0.95
+            "quality_score": 0.95,
         }

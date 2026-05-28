@@ -23,7 +23,7 @@ class PdfReportGenerator(IReportGenerator):
         file_name = f"{job.id}.pdf"
         file_path = os.path.join(self._storage_path, file_name)
 
-        with open(file_path, 'wb') as f:
+        with open(file_path, "wb") as f:
             f.write(pdf_bytes)
 
         report = Report(
@@ -31,7 +31,7 @@ class PdfReportGenerator(IReportGenerator):
             job_id=job.id,
             file_format="pdf",
             file_path=file_path,
-            size_bytes=len(pdf_bytes)
+            size_bytes=len(pdf_bytes),
         )
 
         return report
@@ -53,7 +53,7 @@ class PdfReportGenerator(IReportGenerator):
             job_id=job.id,
             length=job.material_dimensions[0],
             width=job.material_dimensions[1],
-            waste_percent=stats.get("waste_percent", 0)
+            waste_percent=stats.get("waste_percent", 0),
         )
 
     def _render_pdf(self, html_content: str) -> bytes:

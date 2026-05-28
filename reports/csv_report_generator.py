@@ -32,7 +32,7 @@ class CsvReportGenerator(IReportGenerator):
         file_name = f"{job.id}.csv"
         file_path = os.path.join(self._storage_path, file_name)
 
-        with open(file_path, 'wb') as f:
+        with open(file_path, "wb") as f:
             f.write(csv_bytes)
 
         report = Report(
@@ -40,7 +40,7 @@ class CsvReportGenerator(IReportGenerator):
             job_id=job.id,
             file_format="csv",
             file_path=file_path,
-            size_bytes=len(csv_bytes)
+            size_bytes=len(csv_bytes),
         )
 
         return report
@@ -54,4 +54,4 @@ class CsvReportGenerator(IReportGenerator):
         writer.writeheader()
         writer.writerows(data)
 
-        return output.getvalue().encode('utf-8')
+        return output.getvalue().encode("utf-8")

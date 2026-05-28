@@ -28,13 +28,10 @@ def main():
         erp=erp,
         scanner=scanner,
         repo=repo,
-        report_gen=report_gen
+        report_gen=report_gen,
     )
 
-    api = ApiController(
-        job_executor=backend,
-        status_provider=backend
-    )
+    api = ApiController(job_executor=backend, status_provider=backend)
 
     print("\n[Demo] Creating new cutting job...")
 
@@ -45,7 +42,7 @@ def main():
             {"length": 0.8, "width": 0.3, "qty": 2},
         ],
         "erp_order_id": "ORD-12345",
-        "scan_data_id": "SCAN-67890"
+        "scan_data_id": "SCAN-67890",
     }
 
     try:

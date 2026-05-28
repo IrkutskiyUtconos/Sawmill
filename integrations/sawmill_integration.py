@@ -26,5 +26,5 @@ class SawmillIntegration(IMachineIntegration):
             "busy": False,
             "error": None,
             "progress": 100,
-            "temperature": 45.2
+            "temperature": 45.2,
         }

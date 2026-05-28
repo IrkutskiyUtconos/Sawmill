@@ -8,7 +8,7 @@ from interfaces.i_erp_integration import IErpIntegration
 class ErpAdapter(IErpIntegration):
 
     def __init__(self, api_url: str, api_key: str):
-        self._api_url = api_url.rstrip('/')
+        self._api_url = api_url.rstrip("/")
         self._api_key = api_key
         self._session = requests.Session()
         self._session.headers.update({"Authorization": f"Bearer {api_key}"})
@@ -23,7 +23,7 @@ class ErpAdapter(IErpIntegration):
 
         return [
             {"id": "ORD-001", "parts": [{"length": 1.2, "qty": 4}]},
-            {"id": "ORD-002", "parts": [{"length": 2.0, "qty": 2}]}
+            {"id": "ORD-002", "parts": [{"length": 2.0, "qty": 2}]},
         ]
 
     def update_order_status(self, order_id: str, status: str) -> bool:

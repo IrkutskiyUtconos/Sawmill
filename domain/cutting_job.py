@@ -5,12 +5,12 @@ from typing import List, Dict, Tuple, Optional
 class CuttingJob:
 
     def __init__(
-            self,
-            job_id: str,
-            material_dimensions: Tuple[float, float],
-            required_parts: List[Dict[str, float]],
-            erp_order_id: Optional[str] = None,
-            scan_data_id: Optional[str] = None
+        self,
+        job_id: str,
+        material_dimensions: Tuple[float, float],
+        required_parts: List[Dict[str, float]],
+        erp_order_id: Optional[str] = None,
+        scan_data_id: Optional[str] = None,
     ):
         self.id = job_id
         self.created_at = datetime.now()
@@ -39,7 +39,7 @@ class CuttingJob:
             "material_dimensions": self.material_dimensions,
             "required_parts": self.required_parts,
             "erp_order_id": self.erp_order_id,
-            "scan_data_id": self.scan_data_id
+            "scan_data_id": self.scan_data_id,
         }
 
     def update_status(self, new_status: str):

@@ -12,7 +12,7 @@ class TestCuttingJob:
         job = CuttingJob(
             job_id="test-1",
             material_dimensions=(3.0, 1.5),
-            required_parts=[{"length": 1.2, "width": 0.3, "qty": 4}]
+            required_parts=[{"length": 1.2, "width": 0.3, "qty": 4}],
         )
         assert job.id == "test-1"
         assert job.status == "new"
@@ -22,7 +22,7 @@ class TestCuttingJob:
         job = CuttingJob(
             job_id="test-1",
             material_dimensions=(3.0, 1.5),
-            required_parts=[{"length": 1.2, "width": 0.3, "qty": 4}]
+            required_parts=[{"length": 1.2, "width": 0.3, "qty": 4}],
         )
         assert job.validate() is True
 
@@ -30,7 +30,7 @@ class TestCuttingJob:
         job = CuttingJob(
             job_id="test-1",
             material_dimensions=(0, -1.5),
-            required_parts=[{"length": 1.2, "width": 0.3, "qty": 4}]
+            required_parts=[{"length": 1.2, "width": 0.3, "qty": 4}],
         )
         assert job.validate() is False
 
@@ -58,7 +58,7 @@ class TestReport:
             job_id="job-1",
             file_format="pdf",
             file_path="/tmp/report.pdf",
-            size_bytes=1024
+            size_bytes=1024,
         )
         assert report.id == "rep-1"
         assert report.job_id == "job-1"
@@ -84,7 +84,7 @@ class TestApiController:
 
         job_data = {
             "material_dimensions": [3.0, 1.5],
-            "required_parts": [{"length": 1.2, "width": 0.3, "qty": 4}]
+            "required_parts": [{"length": 1.2, "width": 0.3, "qty": 4}],
         }
 
         job_id = controller.start_cutting(job_data)
@@ -109,7 +109,7 @@ class TestSmartCutBackend:
             "erp": Mock(),
             "scanner": Mock(),
             "repo": Mock(),
-            "report_gen": Mock()
+            "report_gen": Mock(),
         }
 
     def test_execute_job_success(self, mock_dependencies):
@@ -118,7 +118,9 @@ class TestSmartCutBackend:
         mock_dependencies["sawmill"].get_status.return_value = {"online": True}
         mock_dependencies["erp"].fetch_orders.return_value = [{"id": "ORD-1"}]
         mock_dependencies["repo"].get_job_stats.return_value = {"waste_percent": 10.5}
-        mock_dependencies["report_gen"].generate.return_value = Report("rep-1", "job-1", "pdf", "/tmp/report.pdf")
+        mock_dependencies["report_gen"].generate.return_value = Report(
+            "rep-1", "job-1", "pdf", "/tmp/report.pdf"
+        )
 
         backend = SmartCutBackend(**mock_dependencies)
 

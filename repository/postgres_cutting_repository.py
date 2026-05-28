@@ -38,7 +38,7 @@ class PostgresCuttingRepository(ICuttingRepository):
             job_id=job_id,
             material_dimensions=(3.0, 1.5),
             required_parts=[{"length": 1.0, "width": 0.3, "qty": 4}],
-            erp_order_id="ORD-001"
+            erp_order_id="ORD-001",
         )
 
     def get_job_stats(self, job_id: str) -> dict:
@@ -49,7 +49,7 @@ class PostgresCuttingRepository(ICuttingRepository):
             "cutting_time_sec": 120,
             "parts_count": 8,
             "efficiency": 87.5,
-            "timestamp": datetime.now().isoformat()
+            "timestamp": datetime.now().isoformat(),
         }
 
     def list_jobs(self, limit: int = 100, offset: int = 0) -> List[CuttingJob]:

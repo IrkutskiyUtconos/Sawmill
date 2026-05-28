@@ -20,7 +20,7 @@ class ApiController:
             material_dimensions=tuple(job_data["material_dimensions"]),
             required_parts=job_data["required_parts"],
             erp_order_id=job_data.get("erp_order_id"),
-            scan_data_id=job_data.get("scan_data_id")
+            scan_data_id=job_data.get("scan_data_id"),
         )
 
         if not job.validate():
