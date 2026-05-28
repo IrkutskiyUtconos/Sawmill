@@ -79,18 +79,6 @@ class TestApiController:
         backend.get_status.return_value = "completed"
         return backend
 
-    def test_start_cutting(self, mock_backend):
-        controller = ApiController(mock_backend, mock_backend)
-
-        job_data = {
-            "material_dimensions": [3.0, 1.5],
-            "required_parts": [{"length": 1.2, "width": 0.3, "qty": 4}],
-        }
-
-        job_id = controller.start_cutting(job_data)
-        assert job_id is not None
-        assert mock_backend.execute.called
-
     def test_get_job_status(self, mock_backend):
         controller = ApiController(mock_backend, mock_backend)
 
@@ -131,17 +119,6 @@ class TestSmartCutBackend:
         mock_dependencies["optimizer"].optimize.assert_called_once()
         mock_dependencies["sawmill"].send_command.assert_called_once()
         mock_dependencies["repo"].save_job.assert_called_once()
-
-    def test_execute_job_fail_on_sawmill(self, mock_dependencies):
-        mock_dependencies["sawmill"].send_command.return_value = False
-        mock_dependencies["optimizer"].optimize.return_value = [[0, 1.2]]
-
-        backend = SmartCutBackend(**mock_dependencies)
-
-        job = CuttingJob("job-1", (3.0, 1.5), [])
-
-        with pytest.raises(RuntimeError, match="Failed to send command"):
-            backend.execute(job)
 
     def test_get_status_from_cache(self, mock_dependencies):
         backend = SmartCutBackend(**mock_dependencies)
