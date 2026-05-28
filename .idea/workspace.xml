@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3c27c9c-81d8-437f-993d-0e30c451b1c2" name="Changes" comment="ready">
+      <change beforePath="$PROJECT_DIR$/smartcut/.flake8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/.github/workflows/smartcut-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/api/api_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/core/smart_cut_backend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/domain/cutting_job.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/domain/report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/integrations/erp_adapter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/integrations/sawmill_integration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/integrations/scanner_adapter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_cutting_optimizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_erp_integration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_job_executor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_job_status_provider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_machine_integration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_report_generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_scanner_integration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/optimization/advanced_neural_optimizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/optimization/neural_network_optimizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/reports/csv_report_generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/reports/pdf_report_generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/repository/postgres_cutting_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcut/tests/test_models.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3ELF4BZ8gvuWDNLgZms09AtQBbG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/anatolijtretak/Desktop/PythonProject1"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3c27c9c-81d8-437f-993d-0e30c451b1c2" name="Changes" comment="" />
+      <created>1779949748814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779949748814</updated>
+    </task>
+    <task id="LOCAL-00001" summary="ready">
+      <option name="closed" value="true" />
+      <created>1779951937369</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779951937370</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready" />
+  </component>
+</project>
