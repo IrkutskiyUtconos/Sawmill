@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3c27c9c-81d8-437f-993d-0e30c451b1c2" name="Changes" comment="ready">
-      <change beforePath="$PROJECT_DIR$/smartcut/.flake8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/.github/workflows/smartcut-ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/api/api_controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/core/smart_cut_backend.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/domain/cutting_job.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/domain/report.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/integrations/erp_adapter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/integrations/sawmill_integration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/integrations/scanner_adapter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_cutting_optimizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_erp_integration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_job_executor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_job_status_provider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_machine_integration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_report_generator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_repository.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/interfaces/i_scanner_integration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/optimization/advanced_neural_optimizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/optimization/neural_network_optimizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/reports/csv_report_generator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/reports/pdf_report_generator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/repository/postgres_cutting_repository.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartcut/tests/test_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/smartcut-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/smartcut-ci.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

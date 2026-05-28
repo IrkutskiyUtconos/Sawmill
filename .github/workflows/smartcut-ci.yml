@@ -153,19 +153,3 @@ jobs:
     runs-on: ubuntu-latest
     needs: [lint, test, security, docker-build]
     if: always()
-
-    steps:
-      - name: Send Telegram notification (optional)
-        if: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_CHAT_ID }}
-          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          message: |
-            SmartCut CI Status
-            Repository: ${{ github.repository }}
-            Branch: ${{ github.ref_name }}
-            Commit: ${{ github.sha }}
-            Workflow: ${{ github.workflow }}
-            Status: ${{ job.status }}
-            Run URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
