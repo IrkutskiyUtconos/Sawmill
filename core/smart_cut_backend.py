@@ -1,6 +1,5 @@
-from typing import List, Dict, Optional, Callable
+from typing import List, Dict, Callable
 from datetime import datetime
-import uuid
 
 from interfaces.i_job_executor import IJobExecutor
 from interfaces.i_job_status_provider import IJobStatusProvider

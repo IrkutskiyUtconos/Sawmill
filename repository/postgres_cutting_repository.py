@@ -1,6 +1,5 @@
-from typing import List, Optional, Dict
+from typing import List, Optional
 from datetime import datetime
-import json
 
 from interfaces.i_repository import ICuttingRepository
 from domain.cutting_job import CuttingJob

@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import Mock, patch
+from unittest.mock import Mock
 from domain.cutting_job import CuttingJob
 from domain.report import Report
 from api.api_controller import ApiController

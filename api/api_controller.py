@@ -1,7 +1,6 @@
 from interfaces.i_job_executor import IJobExecutor
 from interfaces.i_job_status_provider import IJobStatusProvider
 from domain.cutting_job import CuttingJob
-from domain.report import Report
 import uuid
 
 
